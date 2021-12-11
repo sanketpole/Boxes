@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Variables</title>
+    <style>
+        /* global variables */
+        :root{
+            --standard-height:400px;
+            --standard-width:400px;
+            --margin:auto;
+            
+        }
+        .div1{
+             /* local variables */
+             --standard-background-color: green;
+            height: var(--standard-height);
+            width: var(--standard-width);
+            background-color:var(--standard-background-color);
+            margin: var(--margin);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>
